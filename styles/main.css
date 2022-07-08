@@ -27,10 +27,30 @@ body {
     grid-template-columns: auto 1fr;
 }
 
-.code__output {
-    
+.generator__illustration {
+    display: flex;
+
 }
 
-.generator__illustration {
-    
+.flexbox__child {
+    background-color: cadetblue;
+    margin: 1rem;
+    display: grid;
+    place-items: center;
+    font-size: 2rem;
+}
+
+.flexbox__child:nth-child(1) {
+    width: 100px;
+    height: 100px;
+}
+
+.flexbox__child:nth-child(2) {
+    width: 120px;
+    height: 120px;
+}
+
+.flexbox__child:nth-child(3) {
+    width: 140px;
+    height: 140px;
 }
