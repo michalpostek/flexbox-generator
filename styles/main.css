@@ -1,29 +1,36 @@
 body {
-    background-color: rgb(231, 231, 231);
+    background-color: rgb(219, 219, 219);
 }
 
-.generator {
+.app {
+    padding: 2rem 4rem;
+}
+
+.header {
+    text-align: center;
+}
+
+.wrapper {
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    background-color: rgb(240, 240, 240);
+}
+
+.generator__code {
     display: flex;
+    justify-content: center;
 }
 
-.generator__settings {
+.code__rules {
     display: grid;
     grid-template-columns: auto 1fr;
 }
 
+.code__output {
+    
+}
+
 .generator__illustration {
-    flex: 1;
-    background-color: #fff;
-}
-
-/* .generator__code {
     
-} */
-
-.rule {
-    text-indent: 16px;
 }
-
-/* .code__output {
-    
-} */

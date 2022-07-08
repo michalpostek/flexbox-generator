@@ -14,96 +14,93 @@
                 </h1>
             </header>
             <div class="generator">
-                <div class="generator__settings">
-                    <label for="display">
-                        display:
-                    </label>
-                    <select class="value-select" name="display" id="dispaly">
-                        <option value="flex" selected>
-                            flex
-                        </option>
-                        <option value="inline-flex">
-                            inline-flex
-                        </option>
-                    </select>
-                    <label class="label" for="direction">
-                        flex-direction:
-                    </label>
-                    <select class="value-select" name="direction" id="direction">
-                        <option value="row" selected>
-                            row
-                        </option>
-                        <option value="column">
-                            column
-                        </option>
-                        <option value="row-reversed">
-                            row-reversed
-                        </option>
-                        <option value="column-reversed">
-                            column-reversed
-                        </option>
-                    </select>
-                    <label class="label" for="justifyContent">
-                        justify-content
-                    </label>
-                    <select class="value-select" name="justifyContent" id="justifyContent">
-                        <option value="baseline" selected>
-                            baseline
-                        </option>
-                        <option value="center" selected>
-                            center
-                        </option>
-                        <option value="space-evenly" selected>
-                            space-evenly
-                        </option>
-                        <option value="space-between" selected>
-                            space-between
-                        </option>
-                        <option value="space-around" selected>
-                            space-around
-                        </option>
-                        <option value="stretch" selected>
-                            stretch
-                        </option>
-                        <option value="start" selected>
-                            start
-                        </option>
-                        <option value="end" selected>
-                            end
-                        </option>
-                    </select>
-                    <label class="label" for="alignItems">
-                        align-items:
-                    </label>
-                    <select class="value-select" name="alignItems" id="alignItems">
-                        <option value="baseline" selected>
-                            baseline
-                        </option>
-                        <option value="center">
-                            center
-                        </option>
-                        <option value="flex-end">
-                            flex-end
-                        </option>
-                        <option value="flex-start">
-                            flex-start
-                        </option>
-                    </select>
-                </div>
-                <div class="generator__illustration">
-                    <div>One</div>
-                    <div>Two</div>
-                    <div>Three</div>
-                </div>
                 <div class="generator__code">
-                    <p class="code__output">
+                    <div class="code__rules wrapper">
+                        <label for="display">
+                            display:
+                        </label>
+                        <select class="value-select" name="display" id="dispaly">
+                            <option value="flex" selected>
+                                flex
+                            </option>
+                            <option value="inline-flex">
+                                inline-flex
+                            </option>
+                        </select>
+                        <label class="label" for="direction">
+                            flex-direction:
+                        </label>
+                        <select class="value-select" name="direction" id="direction">
+                            <option value="row" selected>
+                                row
+                            </option>
+                            <option value="column">
+                                column
+                            </option>
+                            <option value="row-reversed">
+                                row-reversed
+                            </option>
+                            <option value="column-reversed">
+                                column-reversed
+                            </option>
+                        </select>
+                        <label class="label" for="justifyContent">
+                            justify-content
+                        </label>
+                        <select class="value-select" name="justifyContent" id="justifyContent">
+                            <option value="baseline" selected>
+                                baseline
+                            </option>
+                            <option value="center" selected>
+                                center
+                            </option>
+                            <option value="space-evenly" selected>
+                                space-evenly
+                            </option>
+                            <option value="space-between" selected>
+                                space-between
+                            </option>
+                            <option value="space-around" selected>
+                                space-around
+                            </option>
+                            <option value="stretch" selected>
+                                stretch
+                            </option>
+                            <option value="start" selected>
+                                start
+                            </option>
+                            <option value="end" selected>
+                                end
+                            </option>
+                        </select>
+                        <label class="label" for="alignItems">
+                            align-items:
+                        </label>
+                        <select class="value-select" name="alignItems" id="alignItems">
+                            <option value="baseline" selected>
+                                baseline
+                            </option>
+                            <option value="center">
+                                center
+                            </option>
+                            <option value="flex-end">
+                                flex-end
+                            </option>
+                            <option value="flex-start">
+                                flex-start
+                            </option>
+                        </select>
+                    </div>
+                    <div class="code__output wrapper">
                         element { 
                         <p class="rule">display: flex;</p>
                         }
-                    </p>
-                    <div class="code__copy">
-                        <button>Copy</button>
                     </div>
+                </div>
+                <div class="generator__illustration wrapper">
+                    <div>One</div>
+                    <div>Two</div>
+                    <div>Three</div>
                 </div>
             </div>
             <footer>
