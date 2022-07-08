@@ -87,3 +87,13 @@
     width: 130px;
     height: 130px;
 }
+
+@media (max-width: 600px) {
+    .code__settings {
+        grid-template-columns: auto;
+    }
+
+    .label {
+        place-self: center;
+    }
+}
