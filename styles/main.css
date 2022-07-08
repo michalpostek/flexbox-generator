@@ -1,0 +1,29 @@
+body {
+    background-color: rgb(231, 231, 231);
+}
+
+.generator {
+    display: flex;
+}
+
+.generator__settings {
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+.generator__illustration {
+    flex: 1;
+    background-color: #fff;
+}
+
+/* .generator__code {
+    
+} */
+
+.rule {
+    text-indent: 16px;
+}
+
+/* .code__output {
+    
+} */
