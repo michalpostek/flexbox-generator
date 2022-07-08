@@ -15,8 +15,8 @@ const showCode = () => {
     rulesOutput.innerHTML = '';
 
     valueSelects.forEach((select) => {
-        const { dataset: { property }, value } = select;
-        const rule = `<span>${property}: ${value};<span>`;
+        const { value, name } = select;
+        const rule = `<span>${name}: ${value};<span>`;
 
         rulesOutput.innerHTML += rule;
     });
