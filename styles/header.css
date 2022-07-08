@@ -1,3 +1,15 @@
 .header {
     text-align: center;
 }
+
+.header__title {
+    font-size: var(--largeFont);
+    color: var(--beige);
+    margin: var(--smallMargin) 0;
+}
+
+.header__caption {
+    font-size: var(--smallFont);
+    color: var(--gold);
+    margin: var(--smallMargin) 0;
+}

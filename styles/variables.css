@@ -1,0 +1,17 @@
+:root {
+    --smallFont: 1.1rem;
+    --mediumFont: 1.5rem;
+    --largeFont: 2rem;
+
+    --smallMargin: 0.5rem;
+    --mediumMargin: 1rem;
+    --largeMargin: 1.5rem;
+    --xLargeMargin: 3rem;
+
+    --primaryBorderRadius: 0.5rem;
+
+    --navy: #152238;
+    --lightNavy: #192841;
+    --gold: #D4AF37;
+    --beige: #F9E4B7;
+}

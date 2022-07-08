@@ -2,59 +2,88 @@
     display: flex;
     flex-wrap: wrap;
     white-space: nowrap;
+    font-size: var(--smallFont);
+    color: var(--beige);
 }
 
 .code__settings {
     flex: 1;
     display: grid;
     grid-template-columns: auto 1fr;
+    grid-gap: var(--smallMargin);
+}
+
+.label {
+    display: flex;
+    align-items: center;
+}
+
+.value-select {
+    border-radius: var(--primaryBorderRadius);
+    font-size: var(--smallFont);
+    background: none;
+    color: inherit;
+    padding: var(--smallMargin);
+}
+
+.value-select option {
+    background: var(--navy);
 }
 
 .code__output {
     flex: 1;
+    line-height: 175%;
 }
 
 .output__rules {
     display: flex;
     flex-direction: column;
-    padding-left: 1rem;
+    padding-left: var(--largeMargin);
 }
 
 .generator__illustration {
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    border: 2px dashed green;
-    border-radius: 0.5rem;
+    border: 2px dashed var(--gold);
+    border-radius: var(--primaryBorderRadius);
     min-height: 500px;
 }
 
 .generator__illustration::after {
-    content: 'Your Flexbox';
+    content: 'Flexbox Container';
+    font-size: var(--smallFont);
     position: absolute;
     right: 12px;
     top: 0;
     transform: translateY(-50%);
     padding: 0 6px;
-    background-color: rgb(240, 240, 240);
+    background-color: var(--lightNavy);
+    color: var(--gold);
     z-index: 99;
 }
 
 .flexbox__child {
-    background-color: cadetblue;
-    margin: 1rem;
+    border: 2px solid var(--beige);
+    color: var(--beige);
+    margin: var(--mediumMargin);
     display: grid;
     place-items: center;
-    font-size: 2rem;
-    border-radius: 1rem;
+    font-size: var(--largeFont);
+    border-radius: var(--primaryBorderRadius);
 }
 
-.flexbox__child:nth-child(1), .flexbox__child:nth-child(3) {
+.flexbox__child:nth-child(1) {
     width: 100px;
     height: 100px;
 }
 
 .flexbox__child:nth-child(2) {
-    width: 120px;
-    height: 120px;
+    width: 115px;
+    height: 115px;
+}
+
+.flexbox__child:nth-child(3) {
+    width: 130px;
+    height: 130px;
 }

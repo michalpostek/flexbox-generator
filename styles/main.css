@@ -1,17 +1,18 @@
 body {
-    background-color: rgb(219, 219, 219);
+    background-color: var(--navy);
 }
 
 .app {
-    padding: 2rem 4rem;
+    padding: var(--largeMargin) var(--xLargeMargin);
     display: flex;
     flex-direction: column;
     align-items: stretch;
+    font-family: 'Poppins', serif;
 }
 
 .wrapper {
-    padding: 2rem;
-    margin: 1rem;
-    border-radius: 0.5rem;
-    background-color: rgb(240, 240, 240);
+    padding: var(--largeMargin);
+    margin: var(--mediumMargin);
+    border-radius: var(--primaryBorderRadius);
+    background-color: var(--lightNavy);
 }

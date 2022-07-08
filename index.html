@@ -4,7 +4,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Flexbox Generator</title>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./styles/normalize.css">
+        <link rel="stylesheet" href="./styles/variables.css">
         <link rel="stylesheet" href="./styles/main.css">
         <link rel="stylesheet" href="./styles/header.css">
         <link rel="stylesheet" href="./styles/generator.css">
@@ -12,16 +14,18 @@
     <body>
         <div class="app">
             <header class="header">
-                <img src="#" alt="flexbox">
                 <h1 class="header__title">
                     Flexbox Generator
                 </h1>
+                <p class="header__caption">
+                    A simple tool that will help you create a layout with flexbox
+                </p>
             </header>
             <div class="generator">
                 <div class="generator__code">
                     <div class="code__settings wrapper">
-                        <label for="display">
-                            display:
+                        <label class="label" for="display">
+                            display
                         </label>
                         <select class="value-select" data-property="display" name="display" id="display">
                             <option value="flex" selected>
@@ -31,8 +35,8 @@
                                 inline-flex
                             </option>
                         </select>
-                        <label for="wrap">
-                            flex-wrap:
+                        <label class="label" for="wrap">
+                            flex-wrap
                         </label>
                         <select class="value-select" data-property="flexWrap" name="wrap" id="wrap">
                             <option value="wrap" selected>
@@ -46,7 +50,7 @@
                             </option>
                         </select>
                         <label class="label" for="flex-direction">
-                            flex-direction:
+                            flex-direction
                         </label>
                         <select class="value-select" data-property="flexDirection" name="flex-direction" id="flex-direction">
                             <option value="row" selected>
@@ -92,7 +96,7 @@
                             </option>
                         </select>
                         <label class="label" for="align-items">
-                            align-items:
+                            align-items
                         </label>
                         <select class="value-select" data-property="alignItems" name="align-items" id="align-items">
                             <option value="baseline" selected>
@@ -113,9 +117,6 @@
                         element { 
                         <p class="output__rules"></p>
                         }
-                        <div>
-                            <button id="copyCodeBtn">Copy</button>
-                        </div>
                     </div>
                 </div>
                 <div class="generator__illustration-wrapper wrapper">
