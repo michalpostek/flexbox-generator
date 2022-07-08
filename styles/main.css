@@ -37,10 +37,22 @@ body {
 }
 
 .generator__illustration {
+    position: relative;
     display: flex;
     border: 2px dashed green;
     border-radius: 0.5rem;
     min-height: 500px;
+}
+
+.generator__illustration::after {
+    content: 'Your Flexbox';
+    position: absolute;
+    right: 12px;
+    top: 0;
+    transform: translateY(-50%);
+    padding: 0 6px;
+    background-color: rgb(240, 240, 240);
+    z-index: 99;
 }
 
 .flexbox__child {
