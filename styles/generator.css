@@ -47,7 +47,6 @@
     flex-wrap: wrap;
     border: 2px dashed var(--gold);
     border-radius: var(--primaryBorderRadius);
-    min-height: 500px;
 }
 
 .generator__illustration::after {
@@ -79,11 +78,11 @@
 }
 
 .flexbox__child:nth-child(2) {
-    width: 115px;
-    height: 115px;
+    width: 150px;
+    height: 150px;
 }
 
 .flexbox__child:nth-child(3) {
-    width: 130px;
-    height: 130px;
+    width: 200px;
+    height: 200px;
 }
