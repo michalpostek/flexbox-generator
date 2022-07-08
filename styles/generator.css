@@ -1,11 +1,17 @@
 .generator__code {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    white-space: nowrap;
 }
 
 .code__settings {
+    flex: 1;
     display: grid;
     grid-template-columns: auto 1fr;
+}
+
+.code__output {
+    flex: 1;
 }
 
 .output__rules {
@@ -17,6 +23,7 @@
 .generator__illustration {
     position: relative;
     display: flex;
+    flex-wrap: wrap;
     border: 2px dashed green;
     border-radius: 0.5rem;
     min-height: 500px;
