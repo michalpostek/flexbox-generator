@@ -1,7 +1,7 @@
 const flexbox = document.querySelector('.generator__illustration');
 const valueSelects = document.querySelectorAll('.value-select');
 const copyCodeBtn = document.querySelector('#copyCodeBtn');
-const rulesOutput = document.querySelector('.rules-output');
+const rulesOutput = document.querySelector('.output__rules');
 
 valueSelects.forEach((select) => {
     select.addEventListener('change', () => {
