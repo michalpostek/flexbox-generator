@@ -20,6 +20,7 @@ body {
 .generator__code {
     display: flex;
     justify-content: center;
+    align-content: center;
 }
 
 .code__rules {
@@ -29,7 +30,9 @@ body {
 
 .generator__illustration {
     display: flex;
-
+    border: 2px dashed green;
+    border-radius: 0.5rem;
+    min-height: 500px;
 }
 
 .flexbox__child {
@@ -38,9 +41,10 @@ body {
     display: grid;
     place-items: center;
     font-size: 2rem;
+    border-radius: 1rem;
 }
 
-.flexbox__child:nth-child(1) {
+.flexbox__child:nth-child(1), .flexbox__child:nth-child(3) {
     width: 100px;
     height: 100px;
 }
@@ -48,9 +52,4 @@ body {
 .flexbox__child:nth-child(2) {
     width: 120px;
     height: 120px;
-}
-
-.flexbox__child:nth-child(3) {
-    width: 140px;
-    height: 140px;
 }

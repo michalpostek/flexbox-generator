@@ -19,48 +19,48 @@
                         <label for="display">
                             display:
                         </label>
-                        <select class="value-select" name="display" id="dispaly">
+                        <select class="value-select" data-property="display" name="display" id="display">
                             <option value="flex" selected>
                                 flex
                             </option>
-                            <option value="inlineFlex">
+                            <option value="inline-flex">
                                 inline-flex
                             </option>
                         </select>
                         <label class="label" for="direction">
                             flex-direction:
                         </label>
-                        <select class="value-select" name="direction" id="direction">
+                        <select class="value-select" data-property="flexDirection" name="direction" id="direction">
                             <option value="row" selected>
                                 row
                             </option>
                             <option value="column">
                                 column
                             </option>
-                            <option value="rowReversed">
+                            <option value="row-reverse">
                                 row-reversed
                             </option>
-                            <option value="columnReversed">
+                            <option value="column-reverse">
                                 column-reversed
                             </option>
                         </select>
                         <label class="label" for="justifyContent">
                             justify-content
                         </label>
-                        <select class="value-select" name="justifyContent" id="justifyContent">
+                        <select class="value-select" data-property="justifyContent" name="justifyContent" id="justifyContent">
                             <option value="baseline" selected>
                                 baseline
                             </option>
                             <option value="center">
                                 center
                             </option>
-                            <option value="spaceEvenly">
+                            <option value="space-evenly">
                                 space-evenly
                             </option>
-                            <option value="spaceBetween">
+                            <option value="space-between">
                                 space-between
                             </option>
-                            <option value="spaceAround">
+                            <option value="space-around">
                                 space-around
                             </option>
                             <option value="stretch">
@@ -73,20 +73,43 @@
                                 end
                             </option>
                         </select>
+                        <label class="label" for="alignContent">
+                            align-content
+                        </label>
+                        <select class="value-select" data-property="justifyContent" name="alignContent" id="alignContent">
+                            <option value="center" selected>
+                                center
+                            </option>
+                            <option value="stretch">
+                                stretch
+                            </option>
+                            <option value="space-between">
+                                space-between
+                            </option>
+                            <option value="space-around">
+                                space-around
+                            </option>
+                            <option value="flex-start">
+                                flex-start
+                            </option>
+                            <option value="flex-end">
+                                flex-end
+                            </option>
+                        </select>
                         <label class="label" for="alignItems">
                             align-items:
                         </label>
-                        <select class="value-select" name="alignItems" id="alignItems">
+                        <select class="value-select" data-property="alignItems" name="alignItems" id="alignItems">
                             <option value="baseline" selected>
                                 baseline
                             </option>
                             <option value="center">
                                 center
                             </option>
-                            <option value="flexEnd">
+                            <option value="flex-end">
                                 flex-end
                             </option>
-                            <option value="flexStart">
+                            <option value="flex-start">
                                 flex-start
                             </option>
                         </select>
@@ -97,15 +120,19 @@
                         }
                     </div>
                 </div>
-                <div class="generator__illustration wrapper">
-                    <div class="flexbox__child">1</div>
-                    <div class="flexbox__child">2</div>
-                    <div class="flexbox__child">3</div>
+                <div class="generator__illustration-wrapper wrapper">
+                    <div class="generator__illustration">
+                        <div class="flexbox__child">1</div>
+                        <div class="flexbox__child">2</div>
+                        <div class="flexbox__child">3</div>
+                    </div>
                 </div>
             </div>
             <footer>
     
             </footer>
         </div>
+
+        <script src="./app.js" defer></script>
     </body>
 </html>
