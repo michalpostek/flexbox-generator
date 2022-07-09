@@ -1,4 +1,9 @@
 @media (max-width: 1024px) {
+    :root {
+        --shortBoxLength: 75px;
+        --longBoxLength: 125px;
+    }
+
     .app {
         padding: var(--smallMargin);
     }

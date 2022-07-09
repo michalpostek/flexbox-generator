@@ -39,6 +39,7 @@
 .generator__code-wrapper {
     font-size: var(--smallFont);
     color: var(--beige);
+    overflow: hidden;
 }
 
 .generator__code {
@@ -79,26 +80,26 @@
 }
 
 .flexbox__child:nth-child(1) {
-    width: 100px;
-    height: 100px;
+    min-width: var(--shortBoxLength);
+    min-height: var(--shortBoxLength);
 }
 
 .flexbox__child:nth-child(2) {
-    width: 100px;
-    height: 150px;
+    min-width: var(--longBoxLength);
+    min-height: var(--shortBoxLength);
 }
 
 .flexbox__child:nth-child(3) {
-    width: 150px;
-    height: 100px;
+    min-width: var(--shortBoxLength);
+    min-height: var(--longBoxLength);
 }
 
 .btn {
     transition: .2s;
     margin: var(--largeMargin) 0;
     background: none;
-    color: var(--beige);
-    border: 2px solid var(--beige);
+    color: var(--gold);
+    border: 2px solid var(--gold);
     font-size: var(--smallFont);
     padding: var(--smallMargin) var(--largeMargin);
     border-radius: var(--primaryBorderRadius);

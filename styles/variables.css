@@ -8,6 +8,9 @@
     --largeMargin: 1.5rem;
     --xLargeMargin: 3rem;
 
+    --shortBoxLength: 100px;
+    --longBoxLength: 150px;
+
     --primaryBorderRadius: 0.5rem;
 
     --navy: #152238;
