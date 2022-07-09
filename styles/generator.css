@@ -29,6 +29,8 @@
     display: flex;
     border: 2px dashed var(--gold);
     border-radius: var(--primaryBorderRadius);
+    padding: var(--mediumMargin);
+    gap: var(--mediumMargin);
 }
 
 .generator__preview::after {
@@ -66,7 +68,6 @@
 .flexbox__child {
     border: 2px solid var(--beige);
     color: var(--beige);
-    margin: var(--mediumMargin);
     display: grid;
     place-items: center;
     font-size: var(--largeFont);
