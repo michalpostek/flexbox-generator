@@ -11,8 +11,20 @@ body {
 }
 
 .wrapper {
+    position: relative;
     padding: var(--largeMargin);
     margin: var(--mediumMargin);
     border-radius: var(--primaryBorderRadius);
     background-color: var(--lightNavy);
+}
+
+.wrapper::after {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, -50%);
+    font-size: var(--smallFont);
+    color: var(--gold);
+    text-shadow: 2px 2px 5px var(--navy);
+    z-index: 99;
 }

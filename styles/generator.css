@@ -11,8 +11,16 @@
     color: var(--beige);
 }
 
+.generator__settings::after {
+    content: 'Settings';
+}
+
 .generator__preview-wrapper {
     grid-row: span 2;
+}
+
+.generator__preview-wrapper::after {
+    content: 'Preview';
 }
 
 .generator__preview {
@@ -39,7 +47,10 @@
 .generator__code-wrapper {
     font-size: var(--smallFont);
     color: var(--beige);
-    overflow: hidden;
+}
+
+.generator__code-wrapper::after {
+    content: 'Your code';
 }
 
 .generator__code {
