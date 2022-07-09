@@ -11,6 +11,10 @@
     padding: var(--smallMargin);
 }
 
+.value-select:focus {
+    border-color: var(--gold);
+}
+
 .value-select option {
     background: var(--navy);
 }
