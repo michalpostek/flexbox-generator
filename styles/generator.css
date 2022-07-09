@@ -27,17 +27,16 @@
     content: 'Flexbox Container';
     font-size: var(--smallFont);
     position: absolute;
-    right: 12px;
+    right: 1rem;
     top: 0;
     transform: translateY(-50%);
-    padding: 0 6px;
+    padding: 0 0.5rem;
     background-color: var(--lightNavy);
     color: var(--gold);
     z-index: 99;
 }
 
 .generator__code-wrapper {
-    line-height: 175%;
     font-size: var(--smallFont);
     color: var(--beige);
 }
