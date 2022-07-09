@@ -21,7 +21,7 @@
 
 .btn {
     transition: .2s;
-    margin: var(--largeMargin) 0;
+    margin-top: var(--largeMargin);
     background: none;
     color: var(--gold);
     border: 2px solid var(--gold);
