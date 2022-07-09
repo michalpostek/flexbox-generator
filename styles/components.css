@@ -1,0 +1,32 @@
+.label {
+    display: flex;
+    align-items: center;
+}
+
+.value-select {
+    border-radius: var(--primaryBorderRadius);
+    font-size: var(--smallFont);
+    background: none;
+    color: inherit;
+    padding: var(--smallMargin);
+}
+
+.value-select option {
+    background: var(--navy);
+}
+
+.btn {
+    transition: .2s;
+    margin: var(--largeMargin) 0;
+    background: none;
+    color: var(--gold);
+    border: 2px solid var(--gold);
+    font-size: var(--smallFont);
+    padding: var(--smallMargin) var(--largeMargin);
+    border-radius: var(--primaryBorderRadius);
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: var(--navy);
+}
