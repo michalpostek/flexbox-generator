@@ -1,6 +1,6 @@
-const flexbox = document.querySelector('.generator__illustration');
+const flexbox = document.querySelector('.generator__preview');
 const valueSelects = document.querySelectorAll('.value-select');
-const rulesOutput = document.querySelector('.output__rules');
+const codeOutput = document.querySelector('.generator__code');
 
 valueSelects.forEach((select) => {
     select.addEventListener('change', () => {
@@ -12,13 +12,13 @@ valueSelects.forEach((select) => {
 });
 
 const showCode = () => {
-    rulesOutput.innerHTML = '';
+    codeOutput.innerHTML = '';
 
     valueSelects.forEach((select) => {
         const { value, name } = select;
         const rule = `<span>${name}: ${value};<span>`;
 
-        rulesOutput.innerHTML += rule;
+        codeOutput.innerHTML += rule;
     });
 }
 

@@ -1,16 +1,54 @@
-.generator__code {
-    display: flex;
-    flex-wrap: wrap;
-    white-space: nowrap;
+.generator {
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+.generator__settings {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: var(--smallMargin);
     font-size: var(--smallFont);
     color: var(--beige);
 }
 
-.code__settings {
-    flex: 1;
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-gap: var(--smallMargin);
+.generator__preview-wrapper {
+    grid-row: span 2;
+}
+
+.generator__preview {
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    border: 2px dashed var(--gold);
+    border-radius: var(--primaryBorderRadius);
+    padding: var(--largeMargin);
+}
+
+.generator__preview::after {
+    content: 'Flexbox Container';
+    font-size: var(--smallFont);
+    position: absolute;
+    right: 12px;
+    top: 0;
+    transform: translateY(-50%);
+    padding: 0 6px;
+    background-color: var(--lightNavy);
+    color: var(--gold);
+    z-index: 99;
+}
+
+.generator__code-wrapper {
+    line-height: 175%;
+    font-size: var(--smallFont);
+    color: var(--beige);
+}
+
+.generator__code {
+    display: flex;
+    flex-direction: column;
+    padding-left: var(--largeMargin);
 }
 
 .label {
@@ -30,42 +68,10 @@
     background: var(--navy);
 }
 
-.code__output {
-    flex: 1;
-    line-height: 175%;
-}
-
-.output__rules {
-    display: flex;
-    flex-direction: column;
-    padding-left: var(--largeMargin);
-}
-
-.generator__illustration {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    border: 2px dashed var(--gold);
-    border-radius: var(--primaryBorderRadius);
-}
-
-.generator__illustration::after {
-    content: 'Flexbox Container';
-    font-size: var(--smallFont);
-    position: absolute;
-    right: 12px;
-    top: 0;
-    transform: translateY(-50%);
-    padding: 0 6px;
-    background-color: var(--lightNavy);
-    color: var(--gold);
-    z-index: 99;
-}
-
 .flexbox__child {
     border: 2px solid var(--beige);
     color: var(--beige);
-    margin: var(--mediumMargin);
+    /* margin: var(--mediumMargin); */
     display: grid;
     place-items: center;
     font-size: var(--largeFont);
@@ -78,11 +84,11 @@
 }
 
 .flexbox__child:nth-child(2) {
-    width: 150px;
+    width: 100px;
     height: 150px;
 }
 
 .flexbox__child:nth-child(3) {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 100px;
 }

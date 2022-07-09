@@ -23,109 +23,145 @@
                 </p>
             </header>
             <div class="generator">
-                <div class="generator__code">
-                    <div class="code__settings wrapper">
-                        <label class="label" for="display">
-                            display
-                        </label>
-                        <select class="value-select" data-property="display" name="display" id="display">
-                            <option value="flex" selected>
-                                flex
-                            </option>
-                            <option value="inline-flex">
-                                inline-flex
-                            </option>
-                        </select>
-                        <label class="label" for="wrap">
-                            flex-wrap
-                        </label>
-                        <select class="value-select" data-property="flexWrap" name="wrap" id="wrap">
-                            <option value="wrap" selected>
-                                wrap
-                            </option>
-                            <option value="wrap-reverse">
-                                wrap-reverse
-                            </option>
-                            <option value="nowrap">
-                                nowrap
-                            </option>
-                        </select>
-                        <label class="label" for="flex-direction">
-                            flex-direction
-                        </label>
-                        <select class="value-select" data-property="flexDirection" name="flex-direction" id="flex-direction">
-                            <option value="row" selected>
-                                row
-                            </option>
-                            <option value="column">
-                                column
-                            </option>
-                            <option value="row-reverse">
-                                row-reversed
-                            </option>
-                            <option value="column-reverse">
-                                column-reversed
-                            </option>
-                        </select>
-                        <label class="label" for="justify-content">
-                            justify-content
-                        </label>
-                        <select class="value-select" data-property="justifyContent" name="justify-content" id="justify-content">
-                            <option value="baseline" selected>
-                                baseline
-                            </option>
-                            <option value="center">
-                                center
-                            </option>
-                            <option value="space-evenly">
-                                space-evenly
-                            </option>
-                            <option value="space-between">
-                                space-between
-                            </option>
-                            <option value="space-around">
-                                space-around
-                            </option>
-                            <option value="stretch">
-                                stretch
-                            </option>
-                            <option value="start">
-                                start
-                            </option>
-                            <option value="end">
-                                end
-                            </option>
-                        </select>
-                        <label class="label" for="align-items">
-                            align-items
-                        </label>
-                        <select class="value-select" data-property="alignItems" name="align-items" id="align-items">
-                            <option value="baseline" selected>
-                                baseline
-                            </option>
-                            <option value="center">
-                                center
-                            </option>
-                            <option value="flex-end">
-                                flex-end
-                            </option>
-                            <option value="flex-start">
-                                flex-start
-                            </option>
-                        </select>
-                    </div>
-                    <div class="code__output wrapper">
-                        element { 
-                        <p class="output__rules"></p>
-                        }
-                    </div>
+                <div class="generator__settings wrapper">
+                    <label class="label" for="display">
+                        display
+                    </label>
+                    <select class="value-select" data-property="display" name="display" id="display">
+                        <option value="flex" selected>
+                            flex
+                        </option>
+                        <option value="inline-flex">
+                            inline-flex
+                        </option>
+                    </select>
+                    <label class="label" for="wrap">
+                        flex-wrap
+                    </label>
+                    <select class="value-select" data-property="flexWrap" name="wrap" id="wrap">
+                        <option value="nowrap" selected>
+                            nowrap
+                        </option>
+                        <option value="wrap">
+                            wrap
+                        </option>
+                        <option value="wrap-reverse">
+                            wrap-reverse
+                        </option>
+                    </select>
+                    <label class="label" for="flex-direction">
+                        flex-direction
+                    </label>
+                    <select class="value-select" data-property="flexDirection" name="flex-direction" id="flex-direction">
+                        <option value="row" selected>
+                            row
+                        </option>
+                        <option value="column">
+                            column
+                        </option>
+                        <option value="row-reverse">
+                            row-reversed
+                        </option>
+                        <option value="column-reverse">
+                            column-reversed
+                        </option>
+                    </select>
+                    <label class="label" for="justify-content">
+                        justify-content
+                    </label>
+                    <select class="value-select" data-property="justifyContent" name="justify-content" id="justify-content">
+                        <option value="flex-start">
+                            flex-start
+                        </option>
+                        <option value="flex-end">
+                            flex-end
+                        </option>
+                        <option value="start">
+                            start
+                        </option>
+                        <option value="end">
+                            end
+                        </option>
+                        <option value="left">
+                            left
+                        </option>
+                        <option value="right">
+                            right
+                        </option>
+                        <option value="center">
+                            center
+                        </option>
+                        <option value="space-between">
+                            space-between
+                        </option>
+                        <option value="space-around">
+                            space-around
+                        </option>
+                        <option value="space-evenly">
+                            space-evenly
+                        </option>
+                    </select>
+                    <label class="label" for="align-items">
+                        align-items
+                    </label>
+                    <select class="value-select" data-property="alignItems" name="align-items" id="align-items">
+                        <option value="stretch" selected>
+                            stretch
+                        </option>
+                        <option value="flex-start">
+                            flex-start
+                        </option>
+                        <option value="flex-end">
+                            flex-end
+                        </option>
+                        <option value="center">
+                            center
+                        </option>
+                        <option value="baseline">
+                            baseline
+                        </option>
+                    </select>
+                    <label class="label" for="align-content">
+                        align-content
+                    </label>
+                    <select class="value-select" data-property="alignContent" name="align-content" id="align-content">
+                        <option value="normal" selected>
+                            normal
+                        </option>
+                        <option value="flex-start">
+                            flex-start
+                        </option>
+                        <option value="flex-end">
+                            flex-end
+                        </option>
+                        <option value="center">
+                            center
+                        </option>
+                        <option value="space-around">
+                            space-around
+                        </option>
+                        <option value="space-between">
+                            space-between
+                        </option>
+                        <option value="space-evenly">
+                            space-evenly
+                        </option>
+                        <option value="stretch">
+                            stretch
+                        </option>
+                    </select>
                 </div>
-                <div class="generator__illustration-wrapper wrapper">
-                    <div class="generator__illustration">
+                <div class="generator__preview-wrapper wrapper">
+                    <div class="generator__preview">
                         <div class="flexbox__child">1</div>
                         <div class="flexbox__child">2</div>
                         <div class="flexbox__child">3</div>
                     </div>
+                </div>
+                <div class="generator__code-wrapper wrapper">
+                    element { 
+                    <p class="generator__code"></p>
+                    }
                 </div>
             </div>
             <footer>
