@@ -34,7 +34,7 @@
 }
 
 .generator__preview::after {
-    content: 'Flexbox Container';
+    content: 'Flexbox';
     font-size: var(--smallFont);
     position: absolute;
     right: 1rem;
