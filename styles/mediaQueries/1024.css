@@ -1,0 +1,9 @@
+@media (max-width: 1024px) {
+    .app {
+        padding: var(--smallMargin);
+    }
+
+    .generator {
+        grid-template-columns: 100%;
+    }
+}
