@@ -42,6 +42,10 @@
 }
 
 .generator__code {
+    line-height: 125%;
+}
+
+.code__rules {
     display: flex;
     flex-direction: column;
     padding-left: var(--largeMargin);
@@ -87,4 +91,20 @@
 .flexbox__child:nth-child(3) {
     width: 150px;
     height: 100px;
+}
+
+.btn {
+    transition: .2s;
+    margin: var(--largeMargin) 0;
+    background: none;
+    color: var(--beige);
+    border: 2px solid var(--beige);
+    font-size: var(--smallFont);
+    padding: var(--smallMargin) var(--largeMargin);
+    border-radius: var(--primaryBorderRadius);
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: var(--navy);
 }
