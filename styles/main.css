@@ -3,7 +3,7 @@ body {
 }
 
 .app {
-    padding: var(--largeMargin) var(--xLargeMargin);
+    padding: var(--largeMargin) var(--mediumMargin);
     display: flex;
     flex-direction: column;
     align-items: stretch;

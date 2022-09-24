@@ -1,15 +1,15 @@
 :root {
-    --smallFont: 1.1rem;
-    --mediumFont: 1.5rem;
-    --largeFont: 2rem;
+    --smallFont: 1rem;
+    --mediumFont: 1.1rem;
+    --largeFont: 1.8rem;
 
     --smallMargin: 0.5rem;
     --mediumMargin: 1rem;
     --largeMargin: 1.5rem;
     --xLargeMargin: 3rem;
 
-    --shortBoxLength: 100px;
-    --longBoxLength: 150px;
+    --shortBoxLength: min(100px, 14vw);
+    --longBoxLength: min(150px, 21vw);
 
     --primaryBorderRadius: 0.5rem;
 

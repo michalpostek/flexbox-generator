@@ -5,7 +5,7 @@
 
 .value-select {
     border-radius: var(--primaryBorderRadius);
-    font-size: var(--smallFont);
+    font-size: var(--mediumFont);
     background: none;
     color: inherit;
     padding: var(--smallMargin);
