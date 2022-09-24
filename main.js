@@ -5,13 +5,8 @@ const codeRules = document.querySelector('.code__rules');
 const copyCodeBtn = document.querySelector('#copyCodeBtn');
 
 const btnTransitions = [
-    { 
-        background: 'var(--gold)',
-        color: 'var(--navy)'
-    },
-    { 
-        background: 'none' 
-    }
+    { background: 'var(--gold)',color: 'var(--navy)' },
+    { background: 'none' }
 ];
 
 const showCode = () => {
