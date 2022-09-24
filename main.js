@@ -4,6 +4,16 @@ const codeOutput = document.querySelector('.generator__code');
 const codeRules = document.querySelector('.code__rules');
 const copyCodeBtn = document.querySelector('#copyCodeBtn');
 
+const btnTransitions = [
+    { 
+        background: 'var(--gold)',
+        color: 'var(--navy)'
+    },
+    { 
+        background: 'none' 
+    }
+];
+
 const showCode = () => {
     codeRules.innerHTML = '';
 
@@ -27,6 +37,10 @@ valueSelects.forEach((select) => {
 copyCodeBtn.addEventListener('click', () => {
     const code = codeOutput.textContent;
     navigator.clipboard.writeText(code);
+    copyCodeBtn.animate(btnTransitions, {
+        duration: 500,
+        iterations: 1,
+    });
 });
 
 showCode();

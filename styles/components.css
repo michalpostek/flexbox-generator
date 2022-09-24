@@ -20,7 +20,6 @@
 }
 
 .btn {
-    transition: .2s;
     margin-top: var(--largeMargin);
     background: none;
     color: var(--gold);
