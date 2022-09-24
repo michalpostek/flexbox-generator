@@ -4,16 +4,15 @@ const codeOutput = document.querySelector('.generator__code');
 const codeRules = document.querySelector('.code__rules');
 const copyCodeBtn = document.querySelector('#copyCodeBtn');
 
-const buttonAnimation = [
-    {}, {
-        background: 'var(--beige)', 
-        color: 'var(--navy)'
-    }, {}
-];
+const showCode = () => {
+    codeRules.innerHTML = '';
 
-const buttonTiming = {
-    duration: 500,
-    iterations: 1,
+    valueSelects.forEach((select) => {
+        const { value, name } = select;
+        const rule = `<span>${name}: ${value};<span>`;
+
+        codeRules.innerHTML += rule;
+    });
 }
 
 valueSelects.forEach((select) => {
@@ -28,19 +27,6 @@ valueSelects.forEach((select) => {
 copyCodeBtn.addEventListener('click', () => {
     const code = codeOutput.textContent;
     navigator.clipboard.writeText(code);
-
-    copyCodeBtn.animate(buttonAnimation, buttonTiming);
 });
-
-const showCode = () => {
-    codeRules.innerHTML = '';
-
-    valueSelects.forEach((select) => {
-        const { value, name } = select;
-        const rule = `<span>${name}: ${value};<span>`;
-
-        codeRules.innerHTML += rule;
-    });
-}
 
 showCode();
